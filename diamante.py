@@ -31,4 +31,5 @@ print "OK."
 
 '''
 Nota p: dejarlo en una sola funcion 
+        aumentar los + despues de a = 5
 '''
