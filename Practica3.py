@@ -200,11 +200,10 @@ def unirListas(lista1,lista2,ini1,fin1,ini2,fin2,union):
 		return  unirListas(lista1,lista2,ini1+1,fin1,ini2,fin2,union)
 
 	elif ini2 < fin2:
-		if ini2 < fin2:
-			if not lista2[ini2] in lista1:
-				if not lista2[ini2] in union:	
-					union += [lista2[ini2]]
-			return unirListas(lista1,lista2,ini1,fin1,ini2+1,fin2,union)
+		if not lista2[ini2] in lista1:
+			if not lista2[ini2] in union:	
+				union += [lista2[ini2]]
+		return unirListas(lista1,lista2,ini1,fin1,ini2+1,fin2,union)
 	return union
 
 list_uno = [3,8,8,5,7]
